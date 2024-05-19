@@ -25,7 +25,7 @@ const GearedPage = () => {
             </div>
                     <div class="bicicletas container">
                         <div class="bicicletas-imagem">
-                            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
+                            <img src="./img/cycles/RACE.png" alt="Bicicleta Preta"/>
                             <span class="font-2-m cor-0">R$ 4999</span>
                         </div>
                         <div class="bicicletas-conteudo">
@@ -44,7 +44,7 @@ const GearedPage = () => {
             <div class="bicicletas-bg">
                 <div class="bicicletas container">
                     <div class="bicicletas-imagem">
-                        <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta"/>
+                        <img src="./img/cycles/Stryder.png" alt="Bicicleta Preta"/>
                         <span class="font-2-m cor-0">R$ 4999</span>
                     </div>
                     <div class="bicicletas-conteudo">
@@ -63,7 +63,7 @@ const GearedPage = () => {
 
             <div class="bicicletas container">
                 <div class="bicicletas-imagem">
-                    <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Preta"/>
+                    <img src="./img/cycles/orbea.png" alt="Bicicleta Preta"/>
                     <span class="font-2-m cor-0">R$ 3999</span>
                 </div>
                 <div class="bicicletas-conteudo">
@@ -78,6 +78,27 @@ const GearedPage = () => {
                     <a class="botao seta" href="./bicicletas/nebula.html">About</a>
                 </div>
             </div>
+
+            <div class="bicicletas-bg">
+                <div class="bicicletas container">
+                    <div class="bicicletas-imagem">
+                        <img src="./img/cycles/whitebone.png" alt="Bicicleta Preta"/>
+                        <span class="font-2-m cor-0">R$ 4999</span>
+                    </div>
+                    <div class="bicicletas-conteudo">
+                        <h2 class="font-1-xl cor-0">Magic Might</h2>
+                        <p class="font-2-s cor-5">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                        <ul class="font-1-m cor-5">
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>45 Km/h</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                        </ul>
+                        <a class="botao seta" href="../bicicletas/magic.html">About</a>
+                    </div>
+                </div>
+        </div>
+
 
         </main>
         
