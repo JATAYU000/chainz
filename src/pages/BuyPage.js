@@ -5,8 +5,8 @@ const BuyPage = () => {
     const mycycles = [
         {
             "name": "Gunsrose",
-            "path": "./img/cycles/Gunsrose.png",
-            "price": "4999",
+            "paths": "./img/cycles/Gunsrose.png",
+            "price": "₹ 4999",
             "desc" : "description",
             "stock": "50",
             "speed": "50 Km/h",
@@ -15,8 +15,8 @@ const BuyPage = () => {
         },
         {
             "name": "PhantomX",
-            "path": "./img/cycles/Phantom X.png",
-            "price": "2499",
+            "paths": "./img/cycles/Phantom X.png",
+            "price": "₹ 2499",
             "desc" : "description",
             "stock": "50",
             "speed": "45 Km/h",
@@ -25,8 +25,8 @@ const BuyPage = () => {
         },
         {
             "name": "Cyclotron",
-            "path": "./img/cycles/cyclotron.png",
-            "price": "3999",
+            "paths": "./img/cycles/cyclotron.png",
+            "price": "₹ 3999",
             "desc" : "description",
             "stock": "50",
             "speed": "40 Km/h",
@@ -35,8 +35,8 @@ const BuyPage = () => {
         },
         {
             "name": "Scott",
-            "path": "./img/cycles/SCOTT.png",
-            "price": "3999",
+            "paths": "./img/cycles/SCOTT.png",
+            "price": "₹ 3999",
             "desc" : "description",
             "stock": "50",
             "speed": "40 Km/h",
@@ -45,8 +45,8 @@ const BuyPage = () => {
         },
         {
             "name": "Sunway",
-            "path": "./img/cycles/Sunway.png",
-            "price": "4999",
+            "paths": "./img/cycles/Sunway.png",
+            "price": "₹ 4999",
             "desc" : "description",
             "stock": "50",
             "speed": "50 Km/h",
@@ -55,8 +55,8 @@ const BuyPage = () => {
         },
         {
             "name": "Super Cross",
-            "path": "./img/cycles/Supercross.png",
-            "price": "2499",
+            "paths": "./img/cycles/Supercross.png",
+            "price": "₹ 2499",
             "desc" : "description",
             "stock": "50",
             "speed": "45 Km/h",
@@ -65,8 +65,8 @@ const BuyPage = () => {
         },
         {
             "name": "Red Fox",
-            "path": "./img/cycles/basket.png",
-            "price": "3999",
+            "paths": "./img/cycles/basket.png",
+            "price": "₹ 3999",
             "desc" : "description",
             "stock": "50",
             "speed": "40 Km/h",
@@ -75,8 +75,8 @@ const BuyPage = () => {
         },
         {
             "name": "Marble RX",
-            "path": "./img/cycles/aesthetic.png",
-            "price": "3999",
+            "paths": "./img/cycles/aesthetic.png",
+            "price": "₹ 3999",
             "desc" : "description",
             "stock": "50",
             "speed": "40 Km/h",
@@ -85,8 +85,8 @@ const BuyPage = () => {
         },
         {
             "name": "Whitebone",
-            "path": "./img/cycles/whitebone.png",
-            "price": "4999",
+            "paths": "./img/cycles/whitebone.png",
+            "price": "₹ 4999",
             "desc" : "description",
             "stock": "50",
             "speed": "50 Km/h",
@@ -95,8 +95,8 @@ const BuyPage = () => {
         },
         {
             "name": "RACE",
-            "path": "./img/cycles/RACE.png",
-            "price": "2499",
+            "paths": "./img/cycles/RACE.png",
+            "price": "₹ 2499",
             "desc" : "description",
             "stock": "50",
             "speed": "45 Km/h",
@@ -105,8 +105,8 @@ const BuyPage = () => {
         },
         {
             "name": "Stryder",
-            "path": "./img/cycles/Stryder.png",
-            "price": "3999",
+            "paths": "./img/cycles/Stryder.png",
+            "price": "₹ 3999",
             "desc" : "description",
             "stock": "50",
             "speed": "40 Km/h",
@@ -115,16 +115,14 @@ const BuyPage = () => {
         },
         {
             "name": "Orbea",
-            "path": "./img/cycles/orbea.png",
-            "price": "3999",
+            "paths": "./img/cycles/orbea.png",
+            "price": "₹ 3999",
             "desc" : "description",
             "stock": "50",
             "speed": "40 Km/h",
             "type" : "Shimano Gear",
             "material" : "Carbon Fiber",
         },
-
-
     ]
 
     return (
@@ -169,53 +167,50 @@ const BuyPage = () => {
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
                         <input type="radio" name="produto" value="nimbus" id="nimbus"/>
-                        <label for="nimbus">Gunsrose<span>R$ 4999</span></label>
+                        <label for="nimbus">{mycycles[0].name}<span>{mycycles[0].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>50km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[0].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[0].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[0].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[0].paths} alt="Bicicleta Preta"/>
                         </div>
 
                         <input type="radio" name="produto" value="magic" id="magic"/>
-                        <label for="magic">PhantumX<span>R$ 2499</span></label>
-
+                        <label for="magic">{mycycles[1].name}<span>{mycycles[1].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>45km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[1].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[1].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[1].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[1].paths} alt="Bicicleta Preta"/>
                         </div>
 
                         <input type="radio" name="produto" value="nebula" id="nebula"/>
-                        <label for="nebula">Cyclotron <span>R$ 3999</span></label>
-
+                        <label for="nebula">{mycycles[2].name}<span>{mycycles[2].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[2].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[2].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[2].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                            <img src={mycycles[2].paths} alt="Bicicleta Preta"/>
                         </div>
                         <input type="radio" name="produto" value="n" id="n"/>
-                        <label for="n">Scott<span>R$ 3999</span></label>
-
+                        <label for="n">{mycycles[3].name}<span>{mycycles[3].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[3].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[3].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[3].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                            <img src={mycycles[3].paths} alt="Bicicleta Preta"/>
                         </div>
                         
 
@@ -226,53 +221,50 @@ const BuyPage = () => {
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
                         <input type="radio" name="produto" value="nimbus2" id="nimbus2"/>
-                        <label for="nimbus2">Sunway <span>R$ 4999</span></label>
+                        <label for="nimbus2">{mycycles[4].name}<span>{mycycles[4].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>50km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[4].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[4].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[4].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[4].paths} alt="Bicicleta Preta"/>
                         </div>
 
                         <input type="radio" name="produto" value="magic2" id="magic2"/>
-                        <label for="magic2">Super Cross <span>R$ 2499</span></label>
-
+                        <label for="magic2">{mycycles[5].name}<span>{mycycles[5].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>45km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[5].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[5].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[5].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[5].paths} alt="Bicicleta Preta"/>
                         </div>
 
                         <input type="radio" name="produto" value="nebula2" id="nebula2"/>
-                        <label for="nebula2">Red Fox <span>R$ 3999</span></label>
-
+                        <label for="nebula2">{mycycles[6].name}<span>{mycycles[6].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[6].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[6].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[6].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                            <img src={mycycles[6].paths} alt="Bicicleta Preta"/>
                         </div>
                         <input type="radio" name="produto" value="nebula21" id="nebula21"/>
-                        <label for="nebula21">Marble RX <span>R$ 3999</span></label>
-
+                        <label for="nebula21">{mycycles[7].name}<span>{mycycles[7].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[7].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[7].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[7].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                            <img src={mycycles[7].paths} alt="Bicicleta Preta"/>
                         </div>
                         
 
@@ -283,53 +275,50 @@ const BuyPage = () => {
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
                         <input type="radio" name="produto" value="nimbus3" id="nimbus3"/>
-                        <label for="nimbus3">RACE <span>R$ 4999</span></label>
+                        <label for="nimbus3">{mycycles[8].name}<span>{mycycles[8].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>50km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[8].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[8].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[8].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[8].paths} alt="Bicicleta Preta"/>
                         </div>
 
                         <input type="radio" name="produto" value="magic3" id="magic3"/>
-                        <label for="magic3">White Bone <span>R$ 2499</span></label>
-
+                        <label for="magic3">{mycycles[9].name}<span>{mycycles[9].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>45km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[9].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[9].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[9].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[9].paths} alt="Bicicleta Preta"/>
                         </div>
 
                         <input type="radio" name="produto" value="nebula3" id="nebula3"/>
-                        <label for="nebula3">Stryder <span>R$ 3999</span></label>
-
+                        <label for="nebula3">{mycycles[10].name}<span>{mycycles[10].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[10].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[10].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[10].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                            <img src={mycycles[10].paths} alt="Bicicleta Preta"/>
                         </div>
                         <input type="radio" name="produto" value="ne3" id="ne3"/>
-                        <label for="ne3">Orbea <span>R$ 3999</span></label>
-
+                        <label for="ne3">{mycycles[11].name}<span>{mycycles[11].price}</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[11].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[11].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[11].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                            <img src={mycycles[11].paths} alt="Bicicleta Preta"/>
                         </div>
                         
 

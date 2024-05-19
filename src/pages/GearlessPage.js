@@ -1,6 +1,128 @@
 import './css/LandingPage.css';
 
 const GearlessPage = () => {
+    const mycycles = [
+        {
+            "name": "Gunsrose",
+            "paths": "./img/cycles/Gunsrose.png",
+            "price": "₹ 4999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "50 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "PhantomX",
+            "paths": "./img/cycles/Phantom X.png",
+            "price": "₹ 2499",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "45 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Cyclotron",
+            "paths": "./img/cycles/cyclotron.png",
+            "price": "₹ 3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Scott",
+            "paths": "./img/cycles/SCOTT.png",
+            "price": "₹ 3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Sunway",
+            "paths": "./img/cycles/Sunway.png",
+            "price": "₹ 4999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "50 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Super Cross",
+            "paths": "./img/cycles/Supercross.png",
+            "price": "₹ 2499",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "45 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Red Fox",
+            "paths": "./img/cycles/basket.png",
+            "price": "₹ 3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Marble RX",
+            "paths": "./img/cycles/aesthetic.png",
+            "price": "₹ 3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Whitebone",
+            "paths": "./img/cycles/whitebone.png",
+            "price": "₹ 4999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "50 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "RACE",
+            "paths": "./img/cycles/RACE.png",
+            "price": "₹ 2499",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "45 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Stryder",
+            "paths": "./img/cycles/Stryder.png",
+            "price": "₹ 3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Orbea",
+            "paths": "./img/cycles/orbea.png",
+            "price": "₹ 3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+    ]
     return (
         <body id="bicicleta">
         <header class="header-bg">
@@ -26,7 +148,7 @@ const GearlessPage = () => {
                     <div class="bicicletas container">
                         <div class="bicicletas-imagem">
                             <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
-                            <span class="font-2-m cor-0">R$ 4999</span>
+                            <span class="font-2-m cor-0">{mycycles[4].price}</span>
                         </div>
                         <div class="bicicletas-conteudo">
                             <h2 class="font-1-xl">Nimbus Stark</h2>

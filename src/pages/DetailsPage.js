@@ -28,8 +28,6 @@ const DetailsPage = () => {
                 <div class="bicicleta container">
                         <div class="bicicleta-imagens">
                             <img src="../img/bicicleta/nimbus2.jpg" alt=""/>
-                            <img src="../img/bicicleta/nimbus1.jpg" alt=""/>
-                            <img src="../img/bicicleta/nimbus3.jpg" alt=""/>
                         </div>
 
                         <div class="bicicleta-conteudo">
@@ -76,39 +74,8 @@ const DetailsPage = () => {
                 </div>
             </main>
 
-            <article class="bicicletas-lista container">
-                <h2 class=" font-1-xxl">Escolha a sua <span class="cor-p1">.</span></h2>
 
-                <ul>
-                    <li>
-                        <a href="./bicicletas/magic.html">
-                            <img src="../img/bicicletas/magic.jpg" alt="bicicleta preta"/>
-                            <h3 class="font-1-xl">Magic Might</h3>
-                            <span class="font-2-m cor-8">R$: 2499</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./bicicletas/nebula.html">
-                            <img src="../img/bicicletas/nebula.jpg" alt="bicicleta preta"/>
-                            <h3 class="font-1-xl">Nébula Cosmic</h3>
-                            <span class="font-2-m cor-8">R$: 3999</span>
-                        </a>
-                    </li>
-                </ul>
-            </article>
-
-            <article class="seguro-bg">
-                <div class="seguro container">
-                    <div class="seguro-imagem">
-                        <img src="../img/fotos/seguros.jpg" alt="Pessoa parada em cima de uma bicicleta"/>
-                    </div>
-                    <div class="seguro-conteudo">
-                        <h2 class="font-1-xxl cor-0">Pedalhe mais tranquilo com nosso <span class="cor-p1">seguro</span>.</h2>
-                        <p class="font-2-l cor-5">Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.</p>
-                        <a class="botao" href="../seguros.html">Conheça mais </a>
-                    </div>
-                </div>
-            </article>
+        
 
             <footer class="footer-bg">
             <div class="footer container">
