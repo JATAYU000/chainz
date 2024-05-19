@@ -37,21 +37,21 @@ const LandingPage = () => {
             <ul>
                 <li>
                     <a href="/electric">
-                        <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta"/>
+                        <img src="./img/cycles/elechome.png" alt="bicicleta preta"/>
                         <h3 class="font-1-xl">Electric</h3>
                         <span class="font-2-m cor-8">Starting ₹2900</span>
                     </a>
                 </li>
                 <li>
                     <a href="/geared">
-                        <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta"/>
+                        <img src="./img/cycles/gearhome.png" alt="bicicleta preta"/>
                         <h3 class="font-1-xl">Geared</h3>
                         <span class="font-2-m cor-8">Starting ₹2499</span>
                     </a>
                 </li>
                 <li>
                     <a href="/gearless">
-                        <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta"/>
+                        <img src="./img/cycles/glhome.png" alt="bicicleta preta"/>
                         <h3 class="font-1-xl">Gearless</h3>
                         <span class="font-2-m cor-8">Starting ₹1900</span>
                     </a>
