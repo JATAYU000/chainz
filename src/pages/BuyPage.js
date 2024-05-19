@@ -2,6 +2,91 @@ import React from 'react';
 import './css/LandingPage.css';
 
 const BuyPage = () => {
+    const mycycles = [
+        {
+            "name": "Gunsrose",
+            "path": "./img/bicicletas/nimbus.jpg",
+            "price": "4999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "50 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "PhantumX",
+            "path": "./img/bicicletas/magic.jpg",
+            "price": "2499",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "45 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Cyclotron",
+            "path": "./img/bicicletas/nebula.jpg",
+            "price": "3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Scott",
+            "path": "./img/bicicletas/nebula.jpg",
+            "price": "3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Sunway",
+            "path": "./img/bicicletas/nimbus.jpg",
+            "price": "4999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "50 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Super Cross",
+            "path": "./img/bicicletas/magic.jpg",
+            "price": "2499",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "45 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Red Fox",
+            "path": "./img/bicicletas/nebula.jpg",
+            "price": "3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+        {
+            "name": "Marble RX",
+            "path": "./img/bicicletas/nebula.jpg",
+            "price": "3999",
+            "desc" : "description",
+            "stock": "50",
+            "speed": "40 Km/h",
+            "type" : "Shimano Gear",
+            "material" : "Carbon Fiber",
+        },
+
+
+    ]
+
     return (
         <div id="orcamento">
         <header class="header-bg">
@@ -44,7 +129,7 @@ const BuyPage = () => {
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
                         <input type="radio" name="produto" value="nimbus" id="nimbus"/>
-                        <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
+                        <label for="nimbus">Gunsrose<span>R$ 4999</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
@@ -56,7 +141,7 @@ const BuyPage = () => {
                         </div>
 
                         <input type="radio" name="produto" value="magic" id="magic"/>
-                        <label for="magic">Magic Might <span>R$ 2499</span></label>
+                        <label for="magic">PhantumX<span>R$ 2499</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
@@ -69,7 +154,19 @@ const BuyPage = () => {
                         </div>
 
                         <input type="radio" name="produto" value="nebula" id="nebula"/>
-                        <label for="nebula">Nébula Cosmic <span>R$ 3999</span></label>
+                        <label for="nebula">Cyclotron <span>R$ 3999</span></label>
+
+                        <div class="orcamento-detalhes">
+                            <ul class="font-1-xs cor-8">
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                            </ul>
+                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                        </div>
+                        <input type="radio" name="produto" value="n" id="n"/>
+                        <label for="n">Scott<span>R$ 3999</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
@@ -89,7 +186,7 @@ const BuyPage = () => {
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
                         <input type="radio" name="produto" value="nimbus2" id="nimbus2"/>
-                        <label for="nimbus2">Nimbus Stark <span>R$ 4999</span></label>
+                        <label for="nimbus2">Sunway <span>R$ 4999</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
@@ -101,7 +198,7 @@ const BuyPage = () => {
                         </div>
 
                         <input type="radio" name="produto" value="magic2" id="magic2"/>
-                        <label for="magic2">Magic Might <span>R$ 2499</span></label>
+                        <label for="magic2">Super Cross <span>R$ 2499</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
@@ -114,7 +211,7 @@ const BuyPage = () => {
                         </div>
 
                         <input type="radio" name="produto" value="nebula2" id="nebula2"/>
-                        <label for="nebula2">Nébula Cosmic <span>R$ 3999</span></label>
+                        <label for="nebula2">Red Fox <span>R$ 3999</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
@@ -126,7 +223,7 @@ const BuyPage = () => {
                             <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
                         </div>
                         <input type="radio" name="produto" value="nebula21" id="nebula21"/>
-                        <label for="nebula21">Nébula Cosmic <span>R$ 3999</span></label>
+                        <label for="nebula21">Marble RX <span>R$ 3999</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
@@ -146,7 +243,7 @@ const BuyPage = () => {
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
                         <input type="radio" name="produto" value="nimbus3" id="nimbus3"/>
-                        <label for="nimbus3">Nimbus Stark <span>R$ 4999</span></label>
+                        <label for="nimbus3">RACE <span>R$ 4999</span></label>
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
@@ -158,7 +255,7 @@ const BuyPage = () => {
                         </div>
 
                         <input type="radio" name="produto" value="magic3" id="magic3"/>
-                        <label for="magic3">Magic Might <span>R$ 2499</span></label>
+                        <label for="magic3">White Bone <span>R$ 2499</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
@@ -171,7 +268,19 @@ const BuyPage = () => {
                         </div>
 
                         <input type="radio" name="produto" value="nebula3" id="nebula3"/>
-                        <label for="nebula3">Nébula Cosmic <span>R$ 3999</span></label>
+                        <label for="nebula3">Stryder <span>R$ 3999</span></label>
+
+                        <div class="orcamento-detalhes">
+                            <ul class="font-1-xs cor-8">
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>40km / h</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                            </ul>
+                            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca"/>
+                        </div>
+                        <input type="radio" name="produto" value="ne3" id="ne3"/>
+                        <label for="ne3">Orbea <span>R$ 3999</span></label>
 
                         <div class="orcamento-detalhes">
                             <ul class="font-1-xs cor-8">
