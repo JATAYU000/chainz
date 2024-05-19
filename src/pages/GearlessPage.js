@@ -1,6 +1,9 @@
 import './css/LandingPage.css';
+import React, { useState } from 'react';
+
 
 const GearlessPage = () => {
+    const [index, setIndex] = useState(0);
     const mycycles = [
         {
             "name": "Gunsrose",
@@ -147,62 +150,82 @@ const GearlessPage = () => {
             </div>
                     <div class="bicicletas container">
                         <div class="bicicletas-imagem">
-                            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
+                            <img src={mycycles[4].paths} alt="Bicicleta Preta"/>
                             <span class="font-2-m cor-0">{mycycles[4].price}</span>
                         </div>
                         <div class="bicicletas-conteudo">
-                            <h2 class="font-1-xl">Nimbus Stark</h2>
-                            <p class="font-2-s cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                            <h2 class="font-1-xl">{mycycles[4].name}</h2>
+                            <p class="font-2-s cor-8">{mycycles[4].desc}</p>
                             <ul class="font-1-m cor-8">
-                                    <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                    <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                    <li><img src="./img/icones/velocidade.svg" alt=""/>50 Km/h</li>
-                                    <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[4].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[4].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[4].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="./bicicletas/nimbus.html">About</a>
+                            <a class="botao seta" href="/details">About</a>
                         </div>
                     </div>
             
             <div class="bicicletas-bg">
                 <div class="bicicletas container">
-                    <div class="bicicletas-imagem">
-                        <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta"/>
-                        <span class="font-2-m cor-0">R$ 4999</span>
-                    </div>
-                    <div class="bicicletas-conteudo">
-                        <h2 class="font-1-xl cor-0">Magic Might</h2>
-                        <p class="font-2-s cor-5">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                        <ul class="font-1-m cor-5">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>45 Km/h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
-                        </ul>
-                        <a class="botao seta" href="../bicicletas/magic.html">About</a>
-                    </div>
+                <div class="bicicletas-imagem">
+                            <img src={mycycles[5].paths} alt="Bicicleta Preta"/>
+                            <span class="font-2-m cor-0">{mycycles[5].price}</span>
+                        </div>
+                        <div class="bicicletas-conteudo">
+                            <h2 class="font-1-xl cor-0">{mycycles[5].name}</h2>
+                            <p class="font-2-s cor-5">{mycycles[5].desc}</p>
+                            <ul class="font-1-m cor-5">
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[5].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[5].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[5].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
+                            </ul>
+                            <a class="botao seta" href="/details">About</a>
+                        </div>
                 </div>
         </div>
 
             <div class="bicicletas container">
-                <div class="bicicletas-imagem">
-                    <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Preta"/>
-                    <span class="font-2-m cor-0">R$ 3999</span>
-                </div>
-                <div class="bicicletas-conteudo">
-                    <h2 class="font-1-xl">Nebula Cosmic</h2>
-                    <p class="font-2-s cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                    <ul class="font-1-m cor-8">
-                            <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                            <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                            <li><img src="./img/icones/velocidade.svg" alt=""/>50 Km/h</li>
-                            <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
-                    </ul>
-                    <a class="botao seta" href="./bicicletas/nebula.html">About</a>
-                </div>
+            <div class="bicicletas-imagem">
+                            <img src={mycycles[6].paths} alt="Bicicleta Preta"/>
+                            <span class="font-2-m cor-0">{mycycles[6].price}</span>
+                        </div>
+                        <div class="bicicletas-conteudo">
+                            <h2 class="font-1-xl">{mycycles[6].name}</h2>
+                            <p class="font-2-s cor-8">{mycycles[6].desc}</p>
+                            <ul class="font-1-m cor-8">
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[6].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[6].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[6].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
+                            </ul>
+                            <a class="botao seta" href="/details">About</a>
+                        </div>
+            </div>
+            <div class="bicicletas-bg">
+            <div class="bicicletas container">
+            <div class="bicicletas-imagem">
+                            <img src={mycycles[7].paths} alt="Bicicleta Preta"/>
+                            <span class="font-2-m cor-0">{mycycles[7].price}</span>
+                        </div>
+                        <div class="bicicletas-conteudo">
+                            <h2 class="font-1-xl cor-0">{mycycles[7].name}</h2>
+                            <p class="font-2-s cor-5">{mycycles[7].desc}</p>
+                            <ul class="font-1-m cor-5">
+                                <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[7].type}</li>
+                                <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[7].material}</li>
+                                <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[7].speed}</li>
+                                <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
+                            </ul>
+                            <a class="botao seta" href="/details">About</a>
+                        </div>
+            </div>
             </div>
 
         </main>
-        
+        <article class="parceiros" aria-label="Nossos Parceiros">
+        </article>
 
         <footer class="footer-bg">
             <div class="footer container">
