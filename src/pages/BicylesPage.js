@@ -5,12 +5,12 @@ const BicyclePage = () => {
         <body id="bicicleta">
         <header class="header-bg">
             <div class="header container">
-            <a href="./index.html"><img src="./img/bikcraft.svg" alt="Logo Bikcraft"/></a>
+            <a href="/"><img height = "45" src="./img/chainz.png" alt="Logo Bikcraft"/></a>
                 <nav aria-label="primaria">
                     <ul class="header-menu font-1-m cor-0">
-                        <li><a href="./bicicletas.html">Bicicletas</a></li>
-                        <li><a href="./seguros.html">Seguros</a></li>
-                        <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./bicycles">Bicycles</a></li>
+                        <li><a href="./contact">Contact</a></li>
+                        <li><a href="./buy">Purchase</a></li>
                     </ul>
                 </nav>
             </div>
@@ -19,78 +19,51 @@ const BicyclePage = () => {
         <main>
             <div class="titulo-bg">
                 <div class="titulo container">
-                    <p class="font-2-l-b cor-5">Escolha a melhor para você.</p>
-                        <h1 class="font-1-xxl cor-0">Termos e Condições<span class="cor-p1">.</span></h1>
-                </div>
-            </div>
-                    <div class="bicicletas container">
-                        <div class="bicicletas-imagem">
-                            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Preta"/>
-                            <span class="font-2-m cor-0">R$ 4999</span>
-                        </div>
-                        <div class="bicicletas-conteudo">
-                            <h2 class="font-1-xl">Nimbus Stark</h2>
-                            <p class="font-2-s cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                            <ul class="font-1-m cor-8">
-                                    <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                    <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                    <li><img src="./img/icones/velocidade.svg" alt=""/>50 Km/h</li>
-                                    <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
-                            </ul>
-                            <a class="botao seta" href="./bicicletas/nimbus.html">Mais Sobre</a>
-                        </div>
-                    </div>
-            
-            <div class="bicicletas-bg">
-                <div class="bicicletas container">
-                    <div class="bicicletas-imagem">
-                        <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Preta"/>
-                        <span class="font-2-m cor-0">R$ 4999</span>
-                    </div>
-                    <div class="bicicletas-conteudo">
-                        <h2 class="font-1-xl cor-0">Magic Might</h2>
-                        <p class="font-2-s cor-5">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                        <ul class="font-1-m cor-5">
-                                <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                                <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                                <li><img src="./img/icones/velocidade.svg" alt=""/>45 Km/h</li>
-                                <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
-                        </ul>
-                        <a class="botao seta" href="../bicicletas/magic.html">Mais Sobre</a>
-                    </div>
-                </div>
-        </div>
-
-            <div class="bicicletas container">
-                <div class="bicicletas-imagem">
-                    <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Preta"/>
-                    <span class="font-2-m cor-0">R$ 3999</span>
-                </div>
-                <div class="bicicletas-conteudo">
-                    <h2 class="font-1-xl">Nebula Cosmic</h2>
-                    <p class="font-2-s cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                    <ul class="font-1-m cor-8">
-                            <li><img src="./img/icones/eletrica.svg" alt=""/>Motor Elétrico</li>
-                            <li><img src="./img/icones/carbono.svg" alt=""/>Fibra de Carbono</li>
-                            <li><img src="./img/icones/velocidade.svg" alt=""/>50 Km/h</li>
-                            <li><img src="./img/icones/rastreador.svg" alt=""/>Rastreador</li>
-                    </ul>
-                    <a class="botao seta" href="./bicicletas/nebula.html">Mais Sobre</a>
+                    <p class="font-2-l-b cor-5">CHOOSE THE BEST ONE FOR YOU.</p>
+                        <h1 class="font-1-xxl cor-0">The Only Limitation Is Your Wallet<span class="cor-p1">.</span></h1>
                 </div>
             </div>
 
         </main>
+        <article class="bicicletas-lista">
+            <h2 class="container font-1-xxl">Popular Picks <span class="cor-p1">.</span></h2>
+
+            <ul>
+                <li>
+                    <a href="/electric">
+                        <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta"/>
+                        <h3 class="font-1-xl">Electric</h3>
+                        <span class="font-2-m cor-8">Starting ₹2900</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/geared">
+                        <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta"/>
+                        <h3 class="font-1-xl">Geared</h3>
+                        <span class="font-2-m cor-8">Starting ₹2499</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gearless">
+                        <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta"/>
+                        <h3 class="font-1-xl">Gearless</h3>
+                        <span class="font-2-m cor-8">Starting ₹1900</span>
+                    </a>
+                </li>
+            </ul>
+        </article> 
+        
 
         <footer class="footer-bg">
             <div class="footer container">
-                <img src="./img/bikcraft.svg" alt="Bikcraft"/>
+            <a href="/"><img height = "45" src="./img/chainz.png" alt="Logo Bikcraft"/></a>
                 <div class="footer-contato">
-                    <h3 class="font-2-l-b cor-0">Contato</h3>
+                    <h3 class="font-2-l-b cor-0">Contacts</h3>
                     <ul class="font-2-m cor-5">
-                        <li><a href="tel:+55 21 98878-9908">+55 21 98878-9908</a></li>
-                        <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
-                        <li>Rua Ali Perto, 42 - Botafogo</li>
-                        <li>Rio de Janeiro - RJ</li>
+                        <li><a href="tel:+91 6996420024">+91 6996420024</a></li>
+                        <li><a href="mailto:contact@chainz.com">contact@chainz.com</a></li>
+                        <li>1600 Pennsylvania Avenue NW</li>
+                        <li>Washington, D.C.</li>
                     </ul> 
                     <div class="footer-redes">
                         <a href="/">
@@ -105,17 +78,16 @@ const BicyclePage = () => {
                     </div>
                 </div>
                 <div class="footer-informacoes">
-                    <h3 class="font-2-l-b cor-0">Informações</h3>
+                    <h3 class="font-2-l-b cor-0">Information</h3>
                     <nav>
                         <ul class="font-1-m cor-5">
-                        <li><a href="./bicicletas.html">Bicicletas</a></li>
-                        <li><a href="./seguros.html">Seguros</a></li>
-                        <li><a href="./contatos.html">Contato</a></li>
-                        <li><a href="./termos.html">Termos e Condições</a></li>
+                        <li><a href="/bicycles">Bicycle</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/buy">Purchase</a></li>
                         </ul>
                     </nav>
                 </div>
-                <p class="footer-copy font-2-m cor-6">Bikcraft &copy alguns direitos reservados.</p>    
+                <p class="footer-copy font-2-m cor-6">Made by me. All rigths reserved.</p>    
             </div>
         </footer>
 
@@ -124,3 +96,5 @@ const BicyclePage = () => {
     );
     }
 export default BicyclePage;
+
+
