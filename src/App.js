@@ -15,6 +15,7 @@ import GearedPage from './pages/GearedPage.js';
 import GearlessPage from './pages/GearlessPage.js';
 
 function App() {
+  const [index, setIndex] = useState(1);
   return (
     <div className="Main">
         <BrowserRouter>
@@ -23,10 +24,10 @@ function App() {
             <Route path="/bicycles" element={<BicyclePage/>} />
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/buy" element={<BuyPage/>} />
-            <Route path="/details" element={<DetailsPage/>} />
-            <Route path="/electric" element={<ElectricPage/>} />
-            <Route path="/geared" element={<GearedPage/>} />
-            <Route path="/gearless" element={<GearlessPage/>} />
+            <Route path="/details" element={<DetailsPage index = {index}/>} />
+            <Route path="/electric" element={<ElectricPage index = {index} setIndex = {setIndex}/>} />
+            <Route path="/geared" element={<GearedPage index = {index} setIndex = {setIndex}/>} />
+            <Route path="/gearless" element={<GearlessPage index = {index} setIndex = {setIndex}/>} />
           </Routes>
         </BrowserRouter>
     </div>

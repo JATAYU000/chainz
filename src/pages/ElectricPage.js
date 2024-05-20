@@ -1,6 +1,24 @@
 import './css/LandingPage.css';
+import { useNavigate } from "react-router-dom";
 
-const ElectricPage = () => {
+const ElectricPage = ({index,setIndex}) => {
+    const navigate = useNavigate();
+    const handleClick1 = () => {
+        setIndex(0);
+        navigate("/details");
+    }
+    const handleClick2 = () => {
+        setIndex(1);
+        navigate("/details");
+    }
+    const handleClick3 = () => {
+        setIndex(2);
+        navigate("/details");
+    }
+    const handleClick4 = () => {
+        setIndex(3);
+        navigate("/details");
+    }
     const mycycles = [
         {
             "name": "Gunsrose",
@@ -159,7 +177,7 @@ const ElectricPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[0].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick1} >About</a>
                         </div>
                     </div>
             
@@ -178,7 +196,7 @@ const ElectricPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[1].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick2} >About</a>
                         </div>
                 </div>
         </div>
@@ -197,7 +215,7 @@ const ElectricPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[2].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick3} >About</a>
                         </div>
             </div>
             <div class="bicicletas-bg">
@@ -215,7 +233,7 @@ const ElectricPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[3].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick4} >About</a>
                         </div>
             </div>
             </div>

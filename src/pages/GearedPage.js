@@ -1,6 +1,24 @@
 import './css/LandingPage.css';
+import { useNavigate } from "react-router-dom";
 
-const GearedPage = () => {
+const GearedPage = ({index,setIndex}) => {
+    const navigate = useNavigate();
+    const handleClick1 = () => {
+        setIndex(8);
+        navigate("/details");
+    }
+    const handleClick2 = () => {
+        setIndex(9);
+        navigate("/details");
+    }
+    const handleClick3 = () => {
+        setIndex(10);
+        navigate("/details");
+    }
+    const handleClick4 = () => {
+        setIndex(11);
+        navigate("/details");
+    }
     const mycycles = [
         {
             "name": "Gunsrose",
@@ -159,7 +177,7 @@ const GearedPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[8].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick1} >About</a>
                         </div>
                     </div>
             
@@ -178,7 +196,7 @@ const GearedPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[9].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick2} >About</a>
                         </div>
                 </div>
         </div>
@@ -197,7 +215,7 @@ const GearedPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[11].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick3} >About</a>
                         </div>
             </div>
             <div class="bicicletas-bg">
@@ -215,7 +233,7 @@ const GearedPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[10].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick4} >About</a>
                         </div>
             </div>
             </div>

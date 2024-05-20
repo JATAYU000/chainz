@@ -371,7 +371,7 @@ const BuyPage = () => {
                         <input id="estado" type="text" name="estado"/>
                     </div>
 
-                    <button class="botao col-2">Solicitar orçamento</button>
+                    <button class="botao col-2">Buy now</button>
                 </div>
             </form>
         </main>

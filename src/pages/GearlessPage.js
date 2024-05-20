@@ -1,9 +1,29 @@
 import './css/LandingPage.css';
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
-
-const GearlessPage = () => {
-    const [index, setIndex] = useState(0);
+const GearlessPage = ({index,setIndex}) => {
+    const navigate = useNavigate();
+    const handleClick1 = (e) => {
+        setIndex(4);
+        console.log(index);
+        navigate("/details");
+    }
+    const handleClick2 = () => {
+        setIndex(5);
+        console.log(index);
+        navigate("/details");
+    }
+    const handleClick3 = () => {
+        setIndex(6);
+        console.log(index);
+        navigate("/details");
+    }
+    const handleClick4 = () => {
+        setIndex(7);
+        console.log(index);
+        navigate("/details");
+    }
     const mycycles = [
         {
             "name": "Gunsrose",
@@ -162,7 +182,7 @@ const GearlessPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[4].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick1} >About</a>
                         </div>
                     </div>
             
@@ -181,7 +201,7 @@ const GearlessPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[5].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick2} >About</a>
                         </div>
                 </div>
         </div>
@@ -200,7 +220,7 @@ const GearlessPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[6].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick3} >About</a>
                         </div>
             </div>
             <div class="bicicletas-bg">
@@ -218,7 +238,7 @@ const GearlessPage = () => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[7].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" href="/details">About</a>
+                            <a class="botao seta" onClick = {handleClick4} >About</a>
                         </div>
             </div>
             </div>
