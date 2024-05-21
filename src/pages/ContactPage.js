@@ -1,28 +1,46 @@
 import React from 'react';
 import './css/LandingPage.css';
-import { Resend } from 'resend';
+const {Resend} = require('resend');
+// require('dotenv').config();
 
-// const resend = new Resend('re_ftUBipqh_22DiEhZuEzssc5L1SggdgpXe');
 
 
 const ContactPage = () => {
-    // const resend = new Resend('re_ftUBipqh_22DiEhZuEzssc5L1SggdgpXe');
-    const handleSubmit = async (e) => {
-        // await resend.emails.send({
-        //     from: 'Chainz <onboarding@resend.dev>',
-        //     to: ['shrivaths44kunju@gmail.com'],
-        //     subject: 'Hello World',
-        //     html: '<strong>It works!</strong>',
-        //     headers: {'Access-Control-Allow-Origin': 'true'}
-        //   });
-        //   console.log('Email sent');
-    };
+    const instanceResend = new Resend("re_QAceuiHT_FNMhvHXDpfi4m5PeyeisCSCA");
+    const send = async () => {
+        try {
+        const data = await instanceResend.emails.send({
+            from: "Acme <onboarding@resend.dev>",
+            to: "shrivaths44kunju@gmail.com",
+            subject: "subject@gmail.com",
+            html: "<p>Hello</p",
+            text:  "TEXT",
+            headers: {
+            "X-Entity-Ref-ID": "re_QAceuiHT_FNMhvHXDpfi4m5PeyeisCSCA",
+            'Access-Control-Allow-Origin' : 'http://localhost:3000',
+            },
+            mode : "no-cors",
+            tags: [
+            {
+                name: "category",
+                value: "reset_password",
+                mode: "no-cors",
+            },
+            ],
+        });
+        console.log("Email data: ", data);
+        return data;
+        } catch (error) {
+        console.error(error);
+        return error;
+        } 
+    }
     return (
         <div id="contato">
         <header class="header-bg">
             <div class="header container">
             <a href="/"><img height = "45" src="./img/chainz.png" alt="Logo Bikcraft"/></a>
-                <nav aria-label="primaria">
+                <nav aria-label="primary">
                     <ul class="header-menu font-1-m cor-0">
                         <li><a href="./bicycles">Bicycles</a></li>
                         <li><a href="./contact">Contact</a></li>
@@ -33,8 +51,8 @@ const ContactPage = () => {
         </header>
 
         <main>
-            <div class="titulo-bg">
-                <div class="titulo container">
+            <div class="title-bg">
+                <div class="title container">
                     <p class="font-2-l-b cor-5">RESPONSES WITHIN 24HOURS</p>
                         <h1 class="font-1-xxl cor-0">Our Contact<span class="cor-p1">.</span></h1>
                 </div>
@@ -83,7 +101,7 @@ const ContactPage = () => {
                             <label for="mensagem">Message</label>
                             <textarea id="mensagem" rows="5" name="mensagem" placeholder="What's your query?"></textarea>
                         </div>
-                        <button class="botao col-2" onClick={handleSubmit}><a href = "/" >Send Message</a></button>
+                        <button class="botao col-2" ><a>Send Message</a></button>
                     </div>
                 </section>
             </div>
@@ -92,7 +110,7 @@ const ContactPage = () => {
 <footer class="footer-bg">
             <div class="footer container">
             <a href="/"><img height = "45" src="./img/chainz.png" alt="Logo Bikcraft"/></a>
-                <div class="footer-contato">
+                <div class="footer-contact">
                     <h3 class="font-2-l-b cor-0">Contacts</h3>
                     <ul class="font-2-m cor-5">
                         <li><a href="tel:+91 6996420024">+91 6996420024</a></li>
@@ -100,7 +118,7 @@ const ContactPage = () => {
                         <li>1600 Pennsylvania Avenue NW</li>
                         <li>Washington, D.C</li>
                     </ul> 
-                    <div class="footer-redes">
+                    <div class="footer-socials">
                         <a href="/">
                             <img src="./img/redes/instagram.svg" alt="Instagram"/>
                         </a>
@@ -112,7 +130,7 @@ const ContactPage = () => {
                         </a>
                     </div>
                 </div>
-                <div class="footer-informacoes">
+                <div class="footer-information">
                     <h3 class="font-2-l-b cor-0">Information</h3>
                     <nav>
                         <ul class="font-1-m cor-5">
