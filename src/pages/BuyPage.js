@@ -126,7 +126,7 @@ const BuyPage = () => {
     ]
 
     return (
-        <div id="orcamento">
+        <div id="budget">
         <header class="header-bg">
             <div class="header container">
             <a href="/"><img height = "45" src="./img/chainz.png" alt="Logo Bikcraft"/></a>
@@ -148,8 +148,8 @@ const BuyPage = () => {
                 </div>
             </div>
 
-            <form class="orcamento container" action="/">
-                <div class="orcamento-produto">
+            <form class="budget container" action="/">
+                <div class="budget-product">
                     <h2 class="font-1-xs cor-5">Electric or Geared or Gearless?</h2>
 
                     <input type="radio" name="tipo" value="bikcraft" id="bikcraft"/>
@@ -159,16 +159,16 @@ const BuyPage = () => {
                     <input type="radio" name="tipo" value="geared" id="geared"/>
                     <label for="geared">Geared</label>
 
-                    <input type="radio" name="tipo" value="seguro" id="seguro"/>
-                    <label for="seguro">Gearless</label>
+                    <input type="radio" name="tipo" value="sItem" id="sItem"/>
+                    <label for="sItem">Gearless</label>
                     
 
-                    <div class="orcamento-content" id="orcamento-bikcraft">
+                    <div class="budget-content" id="budget-bikcraft">
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
-                        <input type="radio" name="produto" value="nimbus" id="nimbus"/>
+                        <input type="radio" name="product" value="nimbus" id="nimbus"/>
                         <label for="nimbus">{mycycles[0].name}<span>{mycycles[0].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[0].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[0].material}</li>
@@ -178,9 +178,9 @@ const BuyPage = () => {
                             <img src={mycycles[0].paths} alt="cycle Preta"/>
                         </div>
 
-                        <input type="radio" name="produto" value="magic" id="magic"/>
+                        <input type="radio" name="product" value="magic" id="magic"/>
                         <label for="magic">{mycycles[1].name}<span>{mycycles[1].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[1].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[1].material}</li>
@@ -190,9 +190,9 @@ const BuyPage = () => {
                             <img src={mycycles[1].paths} alt="cycle Preta"/>
                         </div>
 
-                        <input type="radio" name="produto" value="nebula" id="nebula"/>
+                        <input type="radio" name="product" value="nebula" id="nebula"/>
                         <label for="nebula">{mycycles[2].name}<span>{mycycles[2].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[2].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[2].material}</li>
@@ -201,9 +201,9 @@ const BuyPage = () => {
                             </ul>
                             <img src={mycycles[2].paths} alt="cycle Preta"/>
                         </div>
-                        <input type="radio" name="produto" value="n" id="n"/>
+                        <input type="radio" name="product" value="n" id="n"/>
                         <label for="n">{mycycles[3].name}<span>{mycycles[3].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[3].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[3].material}</li>
@@ -217,12 +217,12 @@ const BuyPage = () => {
                     </div>   
                 
 
-                    <div class="orcamento-content" id="orcamento-seguro">
+                    <div class="budget-content" id="budget-sItem">
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
-                        <input type="radio" name="produto" value="nimbus2" id="nimbus2"/>
+                        <input type="radio" name="product" value="nimbus2" id="nimbus2"/>
                         <label for="nimbus2">{mycycles[4].name}<span>{mycycles[4].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[4].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[4].material}</li>
@@ -232,9 +232,9 @@ const BuyPage = () => {
                             <img src={mycycles[4].paths} alt="cycle Preta"/>
                         </div>
 
-                        <input type="radio" name="produto" value="magic2" id="magic2"/>
+                        <input type="radio" name="product" value="magic2" id="magic2"/>
                         <label for="magic2">{mycycles[5].name}<span>{mycycles[5].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[5].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[5].material}</li>
@@ -244,9 +244,9 @@ const BuyPage = () => {
                             <img src={mycycles[5].paths} alt="cycle Preta"/>
                         </div>
 
-                        <input type="radio" name="produto" value="nebula2" id="nebula2"/>
+                        <input type="radio" name="product" value="nebula2" id="nebula2"/>
                         <label for="nebula2">{mycycles[6].name}<span>{mycycles[6].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[6].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[6].material}</li>
@@ -255,9 +255,9 @@ const BuyPage = () => {
                             </ul>
                             <img src={mycycles[6].paths} alt="cycle Preta"/>
                         </div>
-                        <input type="radio" name="produto" value="nebula21" id="nebula21"/>
+                        <input type="radio" name="product" value="nebula21" id="nebula21"/>
                         <label for="nebula21">{mycycles[7].name}<span>{mycycles[7].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[7].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[7].material}</li>
@@ -271,12 +271,12 @@ const BuyPage = () => {
                     </div>
                     
                     
-                    <div class="orcamento-content" id="orcamento-geared">
+                    <div class="budget-content" id="budget-geared">
                         <h2 class="font-1-xs cor-5">Choose the cycle</h2>
 
-                        <input type="radio" name="produto" value="nimbus3" id="nimbus3"/>
+                        <input type="radio" name="product" value="nimbus3" id="nimbus3"/>
                         <label for="nimbus3">{mycycles[8].name}<span>{mycycles[8].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[8].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[8].material}</li>
@@ -286,9 +286,9 @@ const BuyPage = () => {
                             <img src={mycycles[8].paths} alt="cycle Preta"/>
                         </div>
 
-                        <input type="radio" name="produto" value="magic3" id="magic3"/>
+                        <input type="radio" name="product" value="magic3" id="magic3"/>
                         <label for="magic3">{mycycles[9].name}<span>{mycycles[9].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[9].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[9].material}</li>
@@ -298,9 +298,9 @@ const BuyPage = () => {
                             <img src={mycycles[9].paths} alt="cycle Preta"/>
                         </div>
 
-                        <input type="radio" name="produto" value="nebula3" id="nebula3"/>
+                        <input type="radio" name="product" value="nebula3" id="nebula3"/>
                         <label for="nebula3">{mycycles[10].name}<span>{mycycles[10].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[10].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[10].material}</li>
@@ -309,9 +309,9 @@ const BuyPage = () => {
                             </ul>
                             <img src={mycycles[10].paths} alt="cycle Preta"/>
                         </div>
-                        <input type="radio" name="produto" value="ne3" id="ne3"/>
+                        <input type="radio" name="product" value="ne3" id="ne3"/>
                         <label for="ne3">{mycycles[11].name}<span>{mycycles[11].price}</span></label>
-                        <div class="orcamento-detalhes">
+                        <div class="budget-details">
                             <ul class="font-1-xs cor-8">
                                 <li><img src="./img/icones/eletrica.svg" alt=""/>{mycycles[11].type}</li>
                                 <li><img src="./img/icones/carbono.svg" alt=""/>{mycycles[11].material}</li>
@@ -325,7 +325,7 @@ const BuyPage = () => {
                     </div>
                 </div>
 
-                <div class="orcamento-dados form">
+                <div class="budget-data form">
                     <h2 class="font-1-xs cor-9 col-2">PERSONAL DATA</h2>
                     <div>
                         <label for="nome">Name</label>
@@ -371,7 +371,7 @@ const BuyPage = () => {
                         <input id="estado" type="text" name="estado"/>
                     </div>
 
-                    <button class="botao col-2">Buy now</button>
+                    <button class="button col-2">Buy now</button>
                 </div>
             </form>
         </main>
@@ -389,13 +389,13 @@ const BuyPage = () => {
                     </ul> 
                     <div class="footer-socials">
                         <a href="/">
-                            <img src="./img/redes/instagram.svg" alt="Instagram"/>
+                            <img src="./img/rs/instagram.svg" alt="Instagram"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/facebook.svg" alt="Facebook"/>
+                            <img src="./img/rs/facebook.svg" alt="Facebook"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/youtube.svg" alt="Youtube"/>
+                            <img src="./img/rs/youtube.svg" alt="Youtube"/>
                         </a>
                     </div>
                 </div>

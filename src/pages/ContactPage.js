@@ -36,7 +36,7 @@ const ContactPage = () => {
         } 
     }
     return (
-        <div id="contato">
+        <div id="Contact">
         <header class="header-bg">
             <div class="header container">
             <a href="/"><img height = "45" src="./img/chainz.png" alt="Logo Bikcraft"/></a>
@@ -58,32 +58,32 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <div class="contato container">
-                <section class="contato-dados" aria-label="Endereço">
+            <div class="Contact container">
+                <section class="Contact-data" aria-label="Endereço">
                     <h2 class="font-1-m cor-0">Online Contacts</h2>
-                    <div class="contato-endereco font-2-s cor-4">
+                    <div class="Contact-address font-2-s cor-4">
                         <p>1600 Pennsylvania Avenue NW</p>
                         <p>Washington, D.C</p>
                     </div>
-                    <address class="contato-meios font-2-s cor-4">
+                    <address class="Contact-ms font-2-s cor-4">
                         <a href="mailto:contact@chainz.com">contact@chainz.com</a>
                         <a href="mailto:admin@chainz.com">admin@chainz.com</a>
                         <a href="tel: +91 6996420024">+91 6996420024</a>
                     </address>
 
-                    <div class="contato-redes">
+                    <div class="Contact-rs">
                         <a href="/">
-                            <img src="./img/redes/instagram-p.svg" alt="Instagram"/>
+                            <img src="./img/rs/instagram-p.svg" alt="Instagram"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/facebook-p.svg" alt="Facebook"/>
+                            <img src="./img/rs/facebook-p.svg" alt="Facebook"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/youtube-p.svg" alt="Youtube"/>
+                            <img src="./img/rs/youtube-p.svg" alt="Youtube"/>
                         </a>
                     </div>
                 </section>
-                <section class="contato-formulario" aria-label="contato-formulario">
+                <section class="Contact-form" aria-label="Contact-form">
                     <div class="form" >
                         <div>
                             <label for="nome">Name</label>
@@ -101,7 +101,7 @@ const ContactPage = () => {
                             <label for="mensagem">Message</label>
                             <textarea id="mensagem" rows="5" name="mensagem" placeholder="What's your query?"></textarea>
                         </div>
-                        <button class="botao col-2" ><a>Send Message</a></button>
+                        <button class="button col-2" ><a>Send Message</a></button>
                     </div>
                 </section>
             </div>
@@ -120,13 +120,13 @@ const ContactPage = () => {
                     </ul> 
                     <div class="footer-socials">
                         <a href="/">
-                            <img src="./img/redes/instagram.svg" alt="Instagram"/>
+                            <img src="./img/rs/instagram.svg" alt="Instagram"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/facebook.svg" alt="Facebook"/>
+                            <img src="./img/rs/facebook.svg" alt="Facebook"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/youtube.svg" alt="Youtube"/>
+                            <img src="./img/rs/youtube.svg" alt="Youtube"/>
                         </a>
                     </div>
                 </div>

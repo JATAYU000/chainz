@@ -159,7 +159,7 @@ const DetailsPage = ({index}) => {
                         <div class="cycle-content">
                             <p class="font-2-l cor-5">{mycycles[index].desc}</p>
                             <div class="cycle-comp">
-                                <a class="botao" href="/buy">Buy now</a>
+                                <a class="button" href="/buy">Buy now</a>
                                 <span class="font-1-xs cor-6"><img src="../img/icones/entrega.svg" alt=""/>delivery in 5 days</span>
                                 <span class="font-1-xs cor-6"><img src="../img/icones/estoque.svg" alt=""/>{mycycles[index].stock} in stock</span>
                             </div>
@@ -188,7 +188,7 @@ const DetailsPage = ({index}) => {
                             </li>   
                         </ul>
                         <h2 class="font-1-xs cor-0">DATASHEET</h2>
-                        <ul class="cycle-ficha font-2-s cor-4">
+                        <ul class="cycle-token font-2-s cor-4">
                             <li>Weight <span>9kg</span></li>
                             <li>Height <span>60 cm</span></li>
                             <li>Width <span>120 cm</span></li>
@@ -215,13 +215,13 @@ const DetailsPage = ({index}) => {
                     </ul> 
                     <div class="footer-socials">
                         <a href="/">
-                            <img src="./img/redes/instagram.svg" alt="Instagram"/>
+                            <img src="./img/rs/instagram.svg" alt="Instagram"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/facebook.svg" alt="Facebook"/>
+                            <img src="./img/rs/facebook.svg" alt="Facebook"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/youtube.svg" alt="Youtube"/>
+                            <img src="./img/rs/youtube.svg" alt="Youtube"/>
                         </a>
                     </div>
                 </div>
