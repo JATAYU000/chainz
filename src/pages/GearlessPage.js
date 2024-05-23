@@ -182,7 +182,7 @@ const GearlessPage = ({index,setIndex}) => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[4].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" onClick = {handleClick1} >About</a>
+                            <a class="button seta" onClick = {handleClick1} >About</a>
                         </div>
                     </div>
             
@@ -201,7 +201,7 @@ const GearlessPage = ({index,setIndex}) => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[5].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" onClick = {handleClick2} >About</a>
+                            <a class="button seta" onClick = {handleClick2} >About</a>
                         </div>
                 </div>
         </div>
@@ -220,7 +220,7 @@ const GearlessPage = ({index,setIndex}) => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[6].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" onClick = {handleClick3} >About</a>
+                            <a class="button seta" onClick = {handleClick3} >About</a>
                         </div>
             </div>
             <div class="bicycles-bg">
@@ -238,7 +238,7 @@ const GearlessPage = ({index,setIndex}) => {
                                 <li><img src="./img/icones/velocidade.svg" alt=""/>{mycycles[7].speed}</li>
                                 <li><img src="./img/icones/rastreador.svg" alt=""/>Tracker </li>
                             </ul>
-                            <a class="botao seta" onClick = {handleClick4} >About</a>
+                            <a class="button seta" onClick = {handleClick4} >About</a>
                         </div>
             </div>
             </div>
@@ -260,13 +260,13 @@ const GearlessPage = ({index,setIndex}) => {
                     </ul> 
                     <div class="footer-socials">
                         <a href="/">
-                            <img src="./img/redes/instagram.svg" alt="Instagram"/>
+                            <img src="./img/rs/instagram.svg" alt="Instagram"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/facebook.svg" alt="Facebook"/>
+                            <img src="./img/rs/facebook.svg" alt="Facebook"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/youtube.svg" alt="Youtube"/>
+                            <img src="./img/rs/youtube.svg" alt="Youtube"/>
                         </a>
                     </div>
                 </div>

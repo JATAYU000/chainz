@@ -22,7 +22,7 @@ const LandingPage = () => {
                 <div class="introduction-content">
                 <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Rent Your Dream Cycle<span class="cor-p1">.</span></h1>
                 <p class="font-2-l cor-5 fadeInDown" data-anime="400">Explore our diverse range of cycles, catering to every rider. From sleek road bikes to sturdy mountain bikes, we have something for everyone to enjoy the ride.</p>
-                <a class="botao fadeInDown" href="./bicycles" data-anime="600">CHOOSE</a>
+                <a class="button fadeInDown" href="./bicycles" data-anime="600">CHOOSE</a>
                 </div>
                 <div>
                     <img class="fadeInDown" data-anime="600" src="./img/fotos/introduction.jpg" alt="cycle elétrica preta"/>
@@ -119,13 +119,13 @@ const LandingPage = () => {
                     </ul> 
                     <div class="footer-socials">
                         <a href="/">
-                            <img src="./img/redes/instagram.svg" alt="Instagram"/>
+                            <img src="./img/rs/instagram.svg" alt="Instagram"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/facebook.svg" alt="Facebook"/>
+                            <img src="./img/rs/facebook.svg" alt="Facebook"/>
                         </a>
                         <a href="/">
-                            <img src="./img/redes/youtube.svg" alt="Youtube"/>
+                            <img src="./img/rs/youtube.svg" alt="Youtube"/>
                         </a>
                     </div>
                 </div>
